@@ -3,20 +3,23 @@ import { useEffect, useRef } from 'react';
 import { useInView } from 'framer-motion';
 
 export default function Value() {
-  const values = [
-    {
-      title: "Innovation",
-      description: "Pushing boundaries and exploring new possibilities in every project."
-    },
-    {
-      title: "Quality",
-      description: "Delivering excellence through attention to detail and best practices."
-    },
-    {
-      title: "Collaboration",
-      description: "Working together to create solutions that exceed expectations."
-    }
-  ];
+ const values = [
+  {
+    title: "Creativity",
+    description:
+      "Combining technology and design to create clean, engaging, and user-friendly digital experiences."
+  },
+  {
+    title: "Continuous Learning",
+    description:
+      "Exploring new technologies, building practical projects, and continuously improving my development skills."
+  },
+  {
+    title: "Real-World Impact",
+    description:
+      "Building practical solutions that solve problems, simplify experiences, and create meaningful value for users."
+  }
+];
 
   const controls = useAnimation();
   const sectionRef = useRef(null);

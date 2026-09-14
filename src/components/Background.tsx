@@ -2,55 +2,49 @@ import { motion } from "framer-motion";
 
 const workExperiences = [
   {
-    company: "Aiotize Inc.",
-    role: "Product Designer & Fontend Developer",
-    period: "Feb 2025 - May 2025",
-    description: "Designing intuitive, accessible, and visually appealing user interfaces for IoT platforms, collaborating closely with developers to enhance user experience and brand identity.",
+    company: "Community Engagement Program (CEP)",
+    role: "Office Admin",
+    period: "3 Months",
+    description:
+      "Worked on administrative and digital tasks including MS Office, document preparation, printer handling, online data updates, and supporting school-related digital work.",
   },
   {
-    company: "Spark a Change",
-    role: "Volunteer",
-    period: "Jun 2023",
-    description: "Provided academic support to underprivileged students, fostering a positive learning environment and promoting education through creative and interactive teaching methods.",
+    company: "Private & Academic Tutoring",
+    role: "Tutor — Nursery to 12th Standard",
+    period: "2+ Years",
+    description:
+      "Teach students from foundational to higher-secondary levels, with experience in Mathematics, Science, Biology, Physics, English, and Social Science. Focus on explaining concepts from the basics and adapting teaching methods to each student's learning needs.",
   },
 ];
 
 const positionsOfResponsibility = [
   {
-    organization: "MUN Society, MPSTME",
-    role: "Joint General Secretary for Creatives",
-    period: "May 2024 - May 2025",
-    description: "Directed the creative and branding efforts for the MUN Society, conceptualizing visual content, event designs, and promotional material to enhance engagement and outreach.",
+    organization: "V.E.S. College of Arts, Science & Commerce",
+    role: "Class Representative",
+    period: "Student Leadership",
+    description:
+      "Represented classmates, communicated student concerns, coordinated with faculty, and supported communication between students and the college.",
   },
   {
-    organization: "Mumbai MUN",
-    role: "Chief Information Officer",
-    period: "May 2024 - May 2025",
-    description: "Oversaw the digital operations, managed website updates, social media communications, and ensured secure and effective information flow within the organization.",
+    organization: "Tecknow Magazine",
+    role: "Core Design Team Member",
+    period: "College Magazine",
+    description:
+      "Contributed to the design and visual presentation of the Computer Science department's annual technical magazine, combining creativity with technology-focused content.",
   },
   {
-    organization: "Social Conclave",
-    role: "Vice-Chair Person",
-    period: "Nov 2024 - Jan 2025",
-    description: "Co-led event planning and execution, coordinated between organizing teams, moderated sessions, and helped expand outreach to maximize participation and visibility.",
+    organization: "College Magazine Cover Design Competition",
+    role: "1st Rank — Cover Design",
+    period: "College Achievement",
+    description:
+      "Won 1st Rank for a magazine cover design based on the theme 'Rooted in India, Reaching the World.'",
   },
   {
-    organization: "Cyber Chakravyuh",
-    role: "Technical Head",
-    period: "Sep 2024 - May 2025",
-    description: "Led the cybersecurity event’s technical strategy, including problem-setting, platform management, and workshop curation to foster interest and participation in cybersecurity.",
-  },
-  {
-    organization: "Editorial Board, MPSTME",
-    role: "Joint General Secretary",
-    period: "Jul 2023 - Aug 2024",
-    description: "Managed editorial operations, contributed to college publications, organized creative writing events, and ensured high editorial standards across student-led initiatives.",
-  },
-  {
-    organization: "IIT Bombay's Techfest World MUN",
-    role: "Under Secretariat General for Design",
-    period: "Aug 2023 - Dec 2024",
-    description: "Led the design and branding efforts for Techfest World MUN, creating event graphics, delegate handbooks, promotional material, and ensuring cohesive visual identity across all platforms.",
+    organization: "College Events & Activities",
+    role: "Event Anchor & Creative Contributor",
+    period: "College Activities",
+    description:
+      "Participated in anchoring, creative activities, cultural events, and student initiatives, developing communication, teamwork, and presentation skills.",
   },
 ];
 

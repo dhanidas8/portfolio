@@ -38,9 +38,20 @@ export default function About() {
             transition={{ duration: 0.8, ease: 'easeOut' }}
             className="max-w-2xl text-sm sm:text-base font-mono text-justify leading-relaxed"
           >
-            <p>
-              I'm a Computer Science student specializing in Cybersecurity, blending a passion for tech, design, and building real-world solutions. From developing a vulnerability assessment bot with UiPath and OpenAI, to managing the Cybersecurity Club's website and creating my portfolio at neelshha.com, I love projects that merge innovation with impact. I've led digital strategy as Joint General Secretary of my college's MUN Society and as CIO of Mumbai MUN. Skilled in React, Tailwind CSS, Python, and SQL, I'm driven by curiosity, creativity, and the challenge of turning ideas into meaningful digital experiences. Based in Mumbai, I believe thoughtful technology can change the world — one project at a time.
-            </p>
+           <p>
+  I'm Dhani Das, a TY B.Sc. Computer Science student at Vivekanand Education
+  Society's College of Arts, Science & Commerce, Mumbai. I'm passionate about
+  frontend development, UI/UX design, and Artificial Intelligence, and I enjoy
+  turning ideas into clean, interactive, and user-friendly digital experiences.
+  <br /><br />
+  I learn by building practical projects and exploring technologies such as
+  React, Tailwind CSS, JavaScript, Python, Flutter, and databases. I'm also
+  exploring Generative AI, prompt engineering, and AI-powered applications.
+  <br /><br />
+  With a combination of technology and creativity, my goal is to grow as a
+  developer, contribute to real-world projects, and build digital experiences
+  that are both useful and engaging.
+</p>
           </motion.div>
         </div>
       </div>

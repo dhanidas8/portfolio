@@ -1,16 +1,22 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
-export function Loading({ setIsLoading }: { setIsLoading: (loading: boolean) => void }) {
-  const name = 'Neel Shah*';
+export function Loading({
+  setIsLoading,
+}: {
+  setIsLoading: (loading: boolean) => void;
+}) {
+  const name = "Dhani's Portfolio*";
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showCursor, setShowCursor] = useState(true);
 
   useEffect(() => {
     setCurrentIndex(0);
     setShowCursor(true);
+
     let i = 0;
     let timeoutId: ReturnType<typeof setTimeout>;
+
     const type = () => {
       if (i < name.length) {
         setCurrentIndex(i + 1);
@@ -18,8 +24,14 @@ export function Loading({ setIsLoading }: { setIsLoading: (loading: boolean) => 
         timeoutId = setTimeout(type, 220);
       }
     };
+
     type();
-    const cursorInterval = setInterval(() => setShowCursor(c => !c), 500);
+
+    const cursorInterval = setInterval(
+      () => setShowCursor((c) => !c),
+      500
+    );
+
     return () => {
       clearInterval(cursorInterval);
       clearTimeout(timeoutId);
@@ -28,7 +40,11 @@ export function Loading({ setIsLoading }: { setIsLoading: (loading: boolean) => 
 
   useEffect(() => {
     if (currentIndex === name.length) {
-      const doneTimeout = setTimeout(() => setIsLoading(false), 1800);
+      const doneTimeout = setTimeout(
+        () => setIsLoading(false),
+        1800
+      );
+
       return () => clearTimeout(doneTimeout);
     }
   }, [currentIndex, name.length, setIsLoading]);
@@ -38,15 +54,20 @@ export function Loading({ setIsLoading }: { setIsLoading: (loading: boolean) => 
       <span className="font-gambarino text-[2rem] text-neutral-900 dark:text-white bg-transparent drop-shadow-md inline-flex">
         {name.split('').map((char, idx) => {
           if (idx >= currentIndex) return null;
+
           const isAsterisk = char === '*';
           const isSpace = char === ' ';
+
           if (idx === currentIndex - 1) {
             return (
               <motion.span
                 key={idx}
                 initial={{ opacity: 0, y: 12 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.2, ease: 'easeOut' }}
+                transition={{
+                  duration: 0.2,
+                  ease: 'easeOut',
+                }}
                 className={
                   isAsterisk
                     ? 'inline-block text-orange-600'
@@ -59,6 +80,7 @@ export function Loading({ setIsLoading }: { setIsLoading: (loading: boolean) => 
               </motion.span>
             );
           }
+
           return (
             <span
               key={idx}
@@ -74,7 +96,10 @@ export function Loading({ setIsLoading }: { setIsLoading: (loading: boolean) => 
             </span>
           );
         })}
-        <span className={showCursor ? 'inline' : 'invisible'}>|</span>
+
+        <span className={showCursor ? 'inline' : 'invisible'}>
+          |
+        </span>
       </span>
     </div>
   );
